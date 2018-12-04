@@ -1,0 +1,38 @@
+#snakeGame{
+    float: left;
+    width: 1000px;
+}
+
+#graph_div{
+    height: 400px;
+    width: 400px;
+    float: left;
+}
+
+#explanation{
+    float: left;
+    text-align: justify;
+}
+
+#p_explain{
+    padding: 3px;
+}
+
+#controls_div{
+    float: left;
+}
+
+#initilise_button{
+    text-align: center;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    background-color: grey;
+}
+
+#initilise_button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    transition: background-color 1000ms;
+    transition: color 500ms;
+}

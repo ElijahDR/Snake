@@ -1,0 +1,37 @@
+var info = [];
+        for (var i = 0; i < directions.length; i++){
+            info[i] = [0, 0, 0];
+            var lookingPosition = this.headPosition;
+            console.log("direction " + directions[i]);
+            while (true){
+                lookingPosition = createVector(lookingPosition.x + directions[i].x, lookingPosition.y + directions[i].y);
+                console.log(lookingPosition);
+                if (lookingPosition.x == this.fruit.position.x && lookingPosition.y == this.fruit.position.y){
+                    var data = this.headPosition.sub(lookingPosition);
+                    if (data < 0){
+                        data = Math.abs(data);
+                    }
+                    info[i][0] = data;
+                }
+                for (var j = 0; j < this.positions; j++){
+                    if (this.positions[j].x == lookingPosition.x && this.positions[j].y == lookingPosition.y){
+                        var data = this.headPosition.sub(lookingPosition);
+                        if (data < 0){
+                            data = Math.abs(data);
+                        }
+
+                        info[i][1] = data;
+                    }
+                }
+                if (lookingPosition.x < 0 || lookingPosition.y < 0 || lookingPosition.x == w || lookingPosition.y == h){
+                    var data = this.headPosition.sub(lookingPosition);
+                    if (data < 0){
+                        data = Math.abs(data);
+                    }
+                    info[i][2] = data;
+                    break;
+                }
+            }
+        }
+        this.info = info;
+        console.log(this.info);
