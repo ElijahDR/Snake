@@ -11,10 +11,7 @@ function setup() {
     gui = createGui('p5.gui');
 
     sliderRange(0, 1, 0.01);
-    gui.addGlobals('mutationRate');
-
-    sliderRange(2, 1000, 1);
-    gui.addGlobals('noOfNetworks');
+    gui.addGlobals('mutationRate
 
     sliderRange(1, 50, 1);
     gui.addGlobals('noOfRuns');
