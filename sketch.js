@@ -11,7 +11,7 @@ function setup() {
     gui = createGui('p5.gui');
 
     sliderRange(0, 1, 0.01);
-    gui.addGlobals('mutationRate
+    gui.addGlobals('mutationRate');
 
     sliderRange(1, 50, 1);
     gui.addGlobals('noOfRuns');
