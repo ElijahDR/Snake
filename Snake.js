@@ -46,7 +46,7 @@ class Snake{
             this.score++;
             this.tailLength++;
             this.fruitPlace();
-            this.fruit.display();
+            //this.fruit.display();
         }
     }
 
